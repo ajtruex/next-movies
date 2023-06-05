@@ -1,10 +1,10 @@
 import Image from "next/image"
-import MovieCard from "@/components/MovieCard"
+import HomePage from "@/components/HomePage.jsx"
 
 export default function Home() {
   return (
     <div>
-      <MovieCard />
+      <HomePage />
     </div>
   )
 }
