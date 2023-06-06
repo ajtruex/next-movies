@@ -1,6 +1,7 @@
 "use client"
 import React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -15,13 +16,20 @@ import {
 
 const Header = () => {
   return (
-    <header className="py-4 px-5 bg-gray-800">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center text-white">
+    <header className="py-2 bg-gray-800">
+      <div className="container mx-auto flex flex-wrap py-2 px-5 flex-col md:flex-row items-center text-white">
         <Link
           href="/"
           className="flex title-font font-medium items-center text-white mb-4 md:mb-0"
         >
-          <span className="ml-24 text-xl">Next Movies</span>
+          <Image
+            src="/nextjs-ps.png"
+            alt="Next Movies"
+            width={65}
+            height={65}
+
+          />
+          <span className="ml-4 text-2xl">Next Movies</span>
         </Link>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
           <Link href="/theaters" className="mr-8 hover:text-gray-900">

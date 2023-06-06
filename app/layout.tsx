@@ -5,8 +5,11 @@ import Header from "@/components/Header"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "",
+  title: "Next Movies",
   description: "",
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({
